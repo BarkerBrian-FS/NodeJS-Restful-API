@@ -1,0 +1,23 @@
+{
+  "name": "week_3",
+  "version": "1.0.0",
+  "description": "NodeJS Restful API",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BarkerBrian-FS/NodeJS-Restful-API.git"
+  },
+  "keywords": [
+    "NodeJS",
+    "Restful"
+  ],
+  "author": "Brian Barker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BarkerBrian-FS/NodeJS-Restful-API/issues"
+  },
+  "homepage": "https://github.com/BarkerBrian-FS/NodeJS-Restful-API#readme"
+}
