@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const mongoose = require('mongoose');
 const morgan = require('morgan');
 const developRoute = require("../api/routes/developers");
 const videoRoute = require('../api/routes/videogames');
@@ -55,6 +56,15 @@ app.use((error, req, res, next) => {
             status: error.status,
         },
     });
+});
+
+//connect to mongoose
+mongoose.connect(process.env.mongoDbUrl, (err) => {
+    if(err){
+        console.error('Error:', err.message);
+    } else {
+        console.log('Connected to mongo');
+    }
 });
 
 module.exports = app;
