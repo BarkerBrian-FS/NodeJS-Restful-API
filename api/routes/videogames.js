@@ -1,6 +1,5 @@
 const express = require('express');
 const { default: mongoose } = require('mongoose');
-const { rawListeners } = require('../models/videogame');
 const router = express.Router();
 const Game = require('../models/videogame');
 
@@ -106,7 +105,7 @@ router.patch("/:videoId", (req, res, next) =>{
         res.status(200).json({
             message: "Updated Game",
             game: {
-                _id: result.videoId,
+                _id: videoId,
                 title: result.title,
                 developer: result.developer
             }, 
